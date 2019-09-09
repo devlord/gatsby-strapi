@@ -14,7 +14,7 @@ const ArticleTemplate = ({ data }) => (
       </Link>
     </p>
     <Img fluid={data.strapiArticle.image.childImageSharp.fluid} />
-    <Reactmarkdown  
+    <ReactMarkdown  
       source={article.content.substring(0, 500).concat("...")}
       transformImageUri={ uri =>
       uri.startsWith("http")
